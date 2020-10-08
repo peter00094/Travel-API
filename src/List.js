@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import styled from 'styled-components';
-import {CardMedia} from '@material/react-card';
 
 import Card, {
     CardPrimaryContent,
