@@ -9,7 +9,7 @@ class App extends Component {
     super(props);
     this.state = {
       items: [],//json容器
-      isLoaded: false,
+      isLoaded: false,//判斷串接成功與否
       rateSort: "rating_desc",//預設排序方式為評分高到低
     }
   }
@@ -53,14 +53,16 @@ class App extends Component {
           return (b.min_price) - (a.min_price)
         }
 
-        else  {
+        else {
           return (a.min_price) - (b.min_price)
         }
       })
 
       return (
-        <div style={{margin:"20px"}} className="App">
+        <div style={{ margin: "20px" }} className="App">
+          {/* 排序選單 */}
           <RateSort handleSort={this.handleRateSort}></RateSort>
+          {/* 將資料印出 */}
           <List data={sortedData}></List>
         </div>
 
