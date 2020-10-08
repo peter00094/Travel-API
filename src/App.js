@@ -52,7 +52,7 @@ class App extends Component {
           return (b.min_price) - (a.min_price)
         }
 
-        else if (this.state.rateSort === "price_asc") {
+        else  {
           return (a.min_price) - (b.min_price)
         }
       })
