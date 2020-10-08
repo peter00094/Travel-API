@@ -27,7 +27,7 @@ export default class List extends Component {
 
                                     {/* 走訪物件中的陣列 將值一一回傳 */}
                                     {data.tags.map(data=>{
-                                        return <Tag>{data}</Tag>
+                                        return <Tag key={data}>{data}</Tag>
                                     })}
                                   
                                     <br/>
