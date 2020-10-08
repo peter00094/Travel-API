@@ -3,6 +3,7 @@ import './App.css';
 import RateSort from './RateSort.js';
 import List from './List.js'
 
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -58,7 +59,7 @@ class App extends Component {
       })
 
       return (
-        <div className="App">
+        <div style={{margin:"20px"}} className="App">
           <RateSort handleSort={this.handleRateSort}></RateSort>
           <List data={sortedData}></List>
         </div>
